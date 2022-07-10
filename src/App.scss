@@ -1,0 +1,183 @@
+body{
+  background-color: rgb(149, 208, 245);
+}
+.welcome--container{
+  display: flex;
+  justify-content: center;
+}
+.start--button--container{
+  display: flex;
+  justify-content: center;
+  .start__button:hover{
+    background-color: lightgreen;
+  }
+}
+.little--cloud{
+    position: relative;
+    animation-name: animationLittleCloud;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+  .cloud1{ 
+    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 40px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .cloud2{
+    background-color: white;
+    width: 6rem;
+    height: 4rem;
+    border-radius: 40px;
+    margin-left: 4rem;
+    margin-top: -3.5rem;
+  }
+  .cloud3{
+    background-color: white;
+    width: 4rem;
+    height: 3rem;
+    border-radius: 40px;
+    margin-left: 8rem;
+    margin-top: -3.5rem;
+  }
+}
+.big--cloud{
+    margin-left: 10rem;
+    position: relative;
+    animation-name: animationBigCloud;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+  .cloud1{
+    background-color: white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 40px;
+    margin-left: 2rem;
+    margin-top: 5rem;
+  }
+  .cloud2{
+    background-color: white;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 40px;
+    margin-left: 4rem;
+    margin-top: -4.5rem;
+  }
+  .cloud3{
+    background-color: white;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 60px;
+    margin-left: 8rem;
+    margin-top: -7.5rem;
+  }
+}
+@keyframes animationLittleCloud {
+  0%   {left:0px}
+  25%  {left:200px;}
+  50%  {left:100px;}
+  75%  {left:200px;}
+  100% {left:0px;}
+}
+@keyframes animationBigCloud {
+  0%   {left:0px}
+  25%  {left:300px;}
+  50%  {left:100px;}
+  75%  {left:300px;}
+  100% {left:0px;}
+}
+.sun{
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  background-color: yellow;
+  border-radius: 150px;
+}
+.player--container{
+  margin: 1rem;
+  .player__head{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(245, 198, 112);
+    border: 1px solid black;
+    border-radius: 5px;
+    .hair{
+      background-color: brown;
+      width: 2rem;
+      height: .3rem;
+    }
+    .eyes__container{
+      display: flex;
+      justify-content: space-between;
+      .right__eye, .left__eye{
+        width: .5rem;
+        height: .5rem;
+        background-color: black;
+        border-radius: 80px;
+        margin: .3rem;
+      }
+    }
+    .mouth__container{
+      display: flex;
+      justify-content: center;
+      .mouth{
+        width: 1.5rem;
+        height: .3rem;
+        background-color: black;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;     
+      }
+    }
+  }
+  .player__body{
+    display: flex;
+    justify-content: center;
+    width: 2rem;
+    height: 3rem;
+    background-color: red;
+    border-radius: 5px;
+    .player__right__arm{
+      background-color: rgb(245, 198, 112);
+      border: 1px solid black;
+      width: 1rem;
+      height: 3rem;
+    }
+    /*.player__left__arm{
+      background-color: rgb(245, 198, 112);
+      border: 1px solid black;
+      width: 1rem;
+      height: 3rem;
+    }*/
+  }
+  .player__right__leg{
+      background-color: rgb(11, 102, 240);
+      border: 1px solid black;
+      width: 1rem;
+      height: 4rem;
+  }
+  .player__right__foot{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 2rem;
+    height: 1rem;
+  }
+}
+.name--platform--container{
+  display: flex;
+  justify-content: space-around;
+  .name__platform, .last__name__platform{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    background-color: grey;
+    width: 8rem;
+    height: 1.5rem;
+    border: solid 1px white;
+  }
+}
+
